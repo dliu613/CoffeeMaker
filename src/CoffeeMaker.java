@@ -47,15 +47,9 @@ public class CoffeeMaker {
 	 * @return String
 	 */
 	public String checkIngredients() {
+		// TODO: code this method
 		StringBuffer buf = new StringBuffer();
-		buf.append("Coffee: ");
-		buf.append(getCoffee());
-		buf.append("\n");
-		buf.append("Milk: ");
-		buf.append(getMilk());
-		buf.append("\n");
-		buf.append("Chocolate: ");
-		buf.append(getChocolate());
+		buf.append("Not yet implemented");
 		buf.append("\n");
 		return buf.toString();
 	}
@@ -65,9 +59,7 @@ public class CoffeeMaker {
 	 */
 	public void cleanup() {
 		
-		this.coffee = 0;
-		this.milk = 0;
-		this.chocolate = 0;
+		// TODO: code this method
 	}
 
 	/**
@@ -79,13 +71,7 @@ public class CoffeeMaker {
 	 */
 	public void addIngredients(int amtCoffee, int amtMilk, int amtChocolate) throws Exception {
 
-		if (amtCoffee < 0 || amtMilk < 0 || amtChocolate < 0) {
-			throw new Exception("Units must all be a positive integers");
-		}
-
-		this.coffee += amtCoffee;
-		this.milk += amtMilk;
-		this.chocolate += amtChocolate;
+		// TODO: code this method
 	}
 
 	/**
@@ -97,12 +83,8 @@ public class CoffeeMaker {
 	 */
 	public int makeEspresso(int amtPaid) {
 
-		if (amtPaid >= 1 && this.getCoffee() >= 1) {
-			this.coffee--;
-			return amtPaid - 1;	
-		}
-		// not enough money or not enough coffee
-		return amtPaid;
+		// TODO: code this method
+		return -1;
 	}
 
 	/**
@@ -114,12 +96,7 @@ public class CoffeeMaker {
 	 */
 	public int makeLatte(int amtPaid) {
 
-		if (amtPaid >= 2 && this.getCoffee() >= 2 && this.getMilk() >= 1) {
-			this.coffee--;
-			this.milk = this.milk-2;
-			return amtPaid - 2;
-		}
-		// not enough money or not enough coffee
-		return amtPaid;
+		// TODO: code this method
+		return -1;
 	}    
 }
